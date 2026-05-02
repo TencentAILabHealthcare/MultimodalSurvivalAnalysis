@@ -1,0 +1,30 @@
+authorName: root
+experimentName: huaxi
+trialConcurrency: 36
+maxExecDuration: 156h
+maxTrialNum: 3000
+
+trainingServicePlatform: local
+useAnnotation: false
+searchSpacePath: ./baseline/train_script/DFS_val/search_space.json
+logDir: ./baseline/save_dir/nnijizhi_DFS
+# logDir: /home/user/nni_log/
+#
+multiThread: false
+tuner:
+  #
+  builtinTunerName: TPE
+  classArgs: 
+    #
+    optimize_mode: maximize
+  gpuIndices: "0"
+
+trial: 
+  command: bash ./baseline/train_script/DFS_val/nni_train.sh
+  codeDir: ..
+  gpuNum: 1
+
+localConfig:
+  maxTrialNumPerGpu: 3
+  useActiveGpu: true
+  

@@ -1,0 +1,46 @@
+{
+  "instance_attention_layers":{
+    "_type":"choice",
+    "_value":[1,2,3,4,5,6]
+  },
+  "instance_attention_dim":{
+    "_type":"choice",
+    "_value":[64,128,256,512]
+  },
+  "feature_attention_layers":{
+    "_type":"choice",
+    "_value":[1,2,3,4,5]
+  },
+  "feature_attention_dim":{
+    "_type":"choice",
+    "_value":[64,128,256,512]
+  },
+  "lr_patience":{
+    "_type":"choice",
+    "_value":[100]
+  },
+  "dropout":{
+    "_type":"choice",
+    "_value":[0.0, 0.1, 0.3, 0.5]
+  },
+  "instance_lr":{
+    "_type":"choice",
+    "_value":[0.0001,0.001,0.01]
+  },
+  "feat_lr":{
+    "_type":"choice",
+    "_value":[0.0001,0.001,0.01]
+  },
+  "classifier_lr":{
+    "_type":"choice",
+    "_value":[0.0001,0.001,0.01]
+  },
+  "split_seed":{
+    "_type":"choice",
+    "_value":[0, 20]
+  },
+  "aug":{
+    "_type": "choice",
+    "_value":[0]
+  }  
+}
