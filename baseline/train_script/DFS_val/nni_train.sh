@@ -1,1 +1,0 @@
-python3 ./baseline/train_val_DFS.py 

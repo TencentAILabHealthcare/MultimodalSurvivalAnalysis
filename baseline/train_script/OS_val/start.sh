@@ -1,1 +1,0 @@
-nnictl create -c ./baseline/train_script/OS_val/nni_jizhi.yml -p 8081 -f
