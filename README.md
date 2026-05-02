@@ -25,9 +25,16 @@
 * Pytorch
 * R
 
+
 ## Usage
+The pretrained weights can be downloaded through link: https://pan.baidu.com/s/1Sk1z-CpmXJpACsFfT-5cQA?pwd=hahn Passwd: hahn.
 
 In the Pathology folder is the code required for pathological modal survival analysis training and analysis, and in the Multimodal folder is the code required to use the multimodal method. In the Analysis folder is the code needed to analyze and organize the experimental data. There is a corresponding simple code description under each folder.
+
+Training codes are in Baseline/train_val_DFS.py, Baseline/train_val_OS.py and multimodal/main.py.
+Inference codes are in multimodal/Eval_DFS.py and multimodal/Eval_OS.py.
+
+
 
 ## Dataset
 
